@@ -1,0 +1,16 @@
+<h3>正在进行<span>{{arring.length}}</span></h3>
+<!-- 写入待办事件呈现列表 -->
+<ul>
+  <li *ngFor="let item of arring;let i = index">
+    <input type="checkbox" (click)=completed(i)/>{{item}}
+    <button (click)="deling(i)">删除</button>
+  </li>
+</ul>
+
+<h3>已经完成<span>{{arr2.length}}</span></h3>
+<ul>
+  <li *ngFor="let item of arr2;let i = index">
+    <input type="checkbox" (click)=ing(i)/>{{item}}
+    <button (click)=deled(i)>删除</button>
+  </li>
+</ul>
