@@ -36,5 +36,5 @@ function animate(obj,json,callback){//第二个参数对象 {left:300,top:500} �
 //			if(callback){callback();}//不是必须的,不能直接写callback() 会显示callback是undefined
 		    callback&&callback();//与操作符【短路逻辑】
 		}
-	},10)
+	},30)
 }

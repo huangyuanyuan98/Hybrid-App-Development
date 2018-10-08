@@ -8,6 +8,7 @@
 			window.onload = function(){
 				var box = document.getElementById("box");
 				var pic = document.getElementById("pic");
+//				var img = pic.getElementsByTagName("img");
 				var li = pic.getElementsByTagName('li');
 				function timer(){
 				    animate(pic,{marginLeft:-1257},function(){
@@ -18,17 +19,18 @@
 			    	});
 			    }
 				
-				var start=setInterval(timer,300);
+				var start = setInterval(timer,1000);
 				
-				pic.onmouseover=function(){
-		            clearInterval(start);
+				box.onmouseover=function(){
+//					console.log("clearInterval");
+					clearInterval(start);
 	            }
-				pic.onmouseout=function(){
-		            start=setInterval(timer,300);
+				box.onmouseout=function(){
+		            start=setInterval(timer,1000);
                	}
 				
 				prev.onclick = function(){
-					console.log("prev");
+//					console.log("prev");
 					animate(pic,{marginLeft:1257},function(){
 				    	pic.style.marginLeft = "0px";
 				    	var last = li[li.length-1];//li[4]最后一个
@@ -38,28 +40,25 @@
 				}
 				
 	            next.onclick = function(){
-	            	console.log("next");
+//	            	console.log("next");
 	            	animate(pic,{marginLeft:-1257},function(){
 				    	pic.style.marginLeft = "0px";
 				    	var temp = li[0];
 				    	pic.removeChild(li[0]);
 				    	pic.appendChild(temp);
 			    	});
-            	}
+                }
+			}
+			function mouseOver(obj){
+//	            console.log("mouseoverFn");
+	            obj.style.backgroundColor = "yellow";
+	            console.log(obj);
 	            
-//	            var bannerNav = document.getElementsByClassName("bannerNav")[0];
-//	            var li_bottom = bannerNav.getElementsByTagName("li");
-//	            function mouseOver(obj){
-//	            	console.log("mouseoverFn");
-//	            	obj.style.backgroundColor = "yellow";
-//	            }
-//	            for(var n = 0;n<li_bottom.length;n++){
-//	            	li_bottom[n].onmouseover = function(){
-//	            		console.log(n);
-//	            		li_bottom[n].style.backgroundColor = "red";
-//	            	}
-//	            }
-
+	        }
+			function mouseOut(obj){
+//				console.log("mouseoutFn");
+	            obj.style.backgroundColor = "#fff";
+	            
 			}
 		</script>
 		<style>
@@ -148,46 +147,14 @@
 			<div class="bottom">
     	    	<span id="prev"><</span>
     	    	<ul class="bannerNav">
-        			<li onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='#fff'">1</li>
-        			<li onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='#fff'">2</li>
-        			<li onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='#fff'">3</li>
-        			<li onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='#fff'">4</li>
-        			<li onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='#fff'">5</li>
-        			
-        			<!--<li>1</li>
-        			<li>2</li>
-        			<li>3</li>
-        			<li>4</li>
-        			<li>5</li>-->
+        			<li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" value="1">1</li>
+        			<li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" value="2">2</li>
+        			<li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" value="3">3</li>
+        			<li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" value="4">4</li>
+        			<li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" value="5">5</li>
         		</ul>
         		<span id="next">></span>
         	</div>
 		</div>
 	</body>
 </html>
-<!--
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>测试案例</title>
-<script>
-function bigImg(x){
-    x.style.height="64px";
-    x.style.width="64px";
-}
-function normalImg(x){
-    x.style.height="32px";
-    x.style.width="32px";
-}
-</script>
-</head>
-<body>
- 
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images/banner_05.jpg" alt="Smiley" width="32" height="32">
-<p>函数 bigImg() 在鼠标指针移动到笑脸图片是触发。</p>
-<p>函数 normalImg() 在鼠标指针移出笑脸图片是触发.</p>
- 
-</body>
-</html-->
