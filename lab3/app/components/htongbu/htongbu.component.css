@@ -1,0 +1,88 @@
+#content{
+    float: left;
+    width: 728px;
+    /* height: 378px; */
+    border: 3px solid whitesmoke;
+    padding: 10px;
+}
+#content_content{
+    float: left;
+    width: 728px;
+    /* height: 334px; */
+}
+#content_list{
+    float: left;
+    width: 728px;
+    height: 39px;
+}
+#content_list li{
+    float: left;
+    width: 107px;
+    height: 39px;
+    text-align: center;
+}
+#content_list li>a {
+    font-size: 15px;
+    line-height: 39px;
+    color: black;
+}
+form{
+    float: right;
+    margin-right: 50px; 
+    margin-top: 10px; 
+}
+form input{
+    width: 137px;
+    height: 20px;
+    color: darkgray;
+}
+form button{
+    width: 47px;
+    height: 24px;
+}
+#content_content li{
+    padding-bottom: 10px;
+    padding-top:10px;
+    width: 728px;
+    height: 130px;
+    border-bottom:2px solid gainsboro; 
+}
+#img{
+    float: left;
+    width: 215px;
+    height: 130px;
+}
+#img img{
+    width: 215px;
+    height: 130px;
+}
+#name{
+    float: left;
+    width: 300px;
+    height: 130px;
+}
+#coursename{
+    margin-left: 20px;
+}
+#coursename{
+    margin-top: 10px;
+    color: #333;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+#bottom{
+    font-size: 13px;
+    float: left;
+    width: 150px;
+    height: 20px;
+    color:peru;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+#score{
+    float: left;
+    width: 50px;
+    height: 130px; 
+    line-height: 130px;
+}

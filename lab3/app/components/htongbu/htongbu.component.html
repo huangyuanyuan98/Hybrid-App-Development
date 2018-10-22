@@ -1,0 +1,34 @@
+<!-- <p>
+  htongbu works!
+</p> -->
+<div id="content">
+    <div id="content_list">
+      <ul>
+        <li><a href="">我加入的</a></li>
+      </ul>
+      <form action="">
+        <input type="text" value="输入同步课名称搜索">
+        <button>search</button>
+      </form>
+    </div>
+    <hr>
+    <div id="content_content">
+      <ul>
+        <li *ngFor="let course of courses;">
+            <a>
+              <div id="img"><img src="{{course.images}}" alt=""></div>
+              <div id="name">
+                <div id="coursename">{{course.courseName}}</div>
+                <div id="bottom">
+                  <span>任务 {{course.task}} | </span>
+                  <span>人数 {{course.person}}</span>
+                </div>
+              </div>
+              <div id="score">
+                <span>{{course.score}}分</span>
+              </div>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>

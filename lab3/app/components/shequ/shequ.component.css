@@ -1,0 +1,58 @@
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+#images{
+    float: left;
+    width: 130px;
+    height: 90px;
+    padding: 3px;
+    border: 1px solid #EEE;
+}
+#head{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+}
+li{
+    margin-top: 5px;
+    width: 1000px;
+    height: 140px;
+    float: left;
+}
+#article{
+    float: left;
+    width: 500px;
+    height: 140px;
+    padding-left: 10px;
+}
+#articleName{
+    width: 480px;
+    height: 20px;
+    float: left;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#excerpt{
+    width: 500px;
+    height: 56px;
+    float: left;
+    margin-top: 15px;
+    overflow: hidden;
+    font-size: 14px;
+    color: rgb(110, 61, 61);
+}
+#bottom{
+    font-size: 13px;
+    float: right;
+    width: 150px;
+    height: 20px;
+    padding: 0 3px 0 6px;
+    color:peru;
+}
