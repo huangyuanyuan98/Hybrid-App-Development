@@ -1,0 +1,21 @@
+<!-- <p>
+  shequ works!
+</p> -->
+<div class="container">
+  <ul>
+    <li *ngFor = "let article of articles;">
+      <a [routerLink]="['/shequ',article.id]">
+        <div><img src="{{article.head}}" alt="" id="head"></div>
+        <div><img src="{{article.images}}" alt="" id="images"></div>
+        <div id="article">
+          <div id="articleName">{{article.articleName}}</div>
+          <div id="excerpt">{{article.excerpt}}</div>
+          <div id="bottom">
+            <span>阅读量{{article.read}} | </span>
+            <span>评论{{article.comment}}</span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

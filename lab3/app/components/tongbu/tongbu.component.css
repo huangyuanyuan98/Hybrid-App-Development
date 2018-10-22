@@ -1,0 +1,46 @@
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.container li{
+    float: left;
+    height: 244px;
+    width: 216px;
+    margin: 10px;
+}
+#list{
+    float: left;
+    height: 244px;
+    width: 216px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+}
+img{
+    width: 214px;
+    height: 120px;
+}
+h3{
+    width: 214px;
+    height: 33px;
+    font-size: 1em;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    padding: 0 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 500;
+    color: #333;
+}
+#bottom{
+    font-size: 13px;
+    float: left;
+    width: 150px;
+    height: 20px;
+    padding: 0 3px 0 6px;
+    color:slategray;
+}
+#bottom button{
+    float: right;
+}

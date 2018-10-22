@@ -1,0 +1,37 @@
+<div id="content">
+  <div id="input">
+    <form action="">
+      <span>学霸，学渣，偶想说~</span>
+      <div><textarea></textarea></div>
+      <div id="input_bottom">
+        <span>话题 | </span>
+        <span>发长文</span>
+        <span><button id="right">发布</button></span>
+      </div>
+    </form>
+  </div>
+  <div id="content_list">
+    <ul>
+      <li><a href="">动态</a></li>
+      <li><a href="">我的赞</a></li>
+      <li><a href="">我的收藏</a></li>
+    </ul>
+  </div>
+  <div id="dynamic">
+    <ul>
+      <li *ngFor="let talk of talks;">
+        <a>
+          <div id="im"><img src="{{talk.images}}" alt="" id="images"></div>
+          <div id="information">
+            <div id="name">{{talk.name}}</div>
+            <div id="dynamic_content">{{talk.information}}</div>
+            <div id="bottom">
+              <span>{{talk.time}}</span>
+              <span id="right">收藏 转发 评论{{talk.comment}} 赞</span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

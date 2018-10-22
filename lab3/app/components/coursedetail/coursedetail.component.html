@@ -1,0 +1,17 @@
+<div class="container">
+    <div id="bottom">
+      <div id="name"><h2>同步课/{{lesson?.lessonName}}</h2></div>
+      
+      <ul id="list">
+        <li id="orange">简介</li>
+        <li>互动</li>
+        <li>任务</li>
+        <li>成员{{lesson?.person}}</li>
+        <!-- course?.courseName [最开始请求的时候为undefined后面获取到值再在网页出现(会报错)=>加?忽略前面没找到不报错] -->
+      </ul>
+      <div id="content">
+        <h5>{{lesson?.content}}</h5>
+      </div>
+      
+    </div>
+  </div>
