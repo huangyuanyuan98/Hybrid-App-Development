@@ -1,0 +1,31 @@
+.container{
+    margin-bottom: 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+#buttom{
+    float: left;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+#list li{
+    float: left;
+    width: 77px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    color: black;
+    text-align: center;
+}
+#orange{
+    background-color:orange;
+}
+#content{
+    float: left;
+    width: 1000px;
+}
+#name{
+    float: left;
+    width: 1000px;
+}

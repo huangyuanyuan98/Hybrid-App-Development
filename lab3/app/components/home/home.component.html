@@ -1,0 +1,50 @@
+<!-- <p>
+  home works!
+</p> -->
+<!-- 我将样式写到行内，方便大家看，大家的样式要写到css文件中去 -->
+<!-- <div class="left" style="float:left;">
+  <ul>
+    <li><a [routerLink]="['./todo']">todolist</a></li>
+    <li><a [routerLink]="['./parent']">parent组件</a></li>
+    <li><a [routerLink]=""></a></li>
+    <li><a [routerLink]=""></a></li>
+  </ul>
+</div> -->
+
+<!-- 引一张图片 放在assets的images里 -->
+<!-- <img src="assets/images/taidi.jpg" alt="泰迪"/> -->
+
+<!-- <div class="right" style="float:left;margin-left:50px;">
+  <router-outlet></router-outlet>
+</div> -->
+
+<div class="container">
+  <div id="menu">
+    <div id="head">
+      <img src="assets/images/touxiang.jpg" alt="头像"/>
+      <h4>8-黄媛媛</h4>
+      <div id="fans">
+        <a href="">
+          <span>1</span>
+          <span>粉丝</span>
+        </a>
+        <a href="">
+            <span>2</span>
+            <span>关注</span>
+          </a>
+      </div>
+    </div>
+    <div id="list">
+      <ul>
+        <li><img src="assets/images/task.png" alt="任务"/><a [routerLink]="['./htask']">任务</a></li>
+        <li><img src="assets/images/tongbu.png" alt="同步课"/><a [routerLink]="['./htongbu']">同步课</a></li>
+        <li><img src="assets/images/course.png" alt="课程"/><a [routerLink]="['./hcourse']">课程</a></li>
+        <li><img src="assets/images/talk.png" alt="且说"/><a [routerLink]="['./htalk']">且说</a></li>
+        <li><img src="assets/images/tell.png" alt="通知"/><a [routerLink]="['./htell']">通知</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

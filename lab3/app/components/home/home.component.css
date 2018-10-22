@@ -1,0 +1,65 @@
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+#menu{
+    margin-top: 20px;
+    width: 170px;
+    height: 458px;
+    float: left;
+}
+#content{
+    width: 728px;
+    height: 388px;
+    margin: 20px;
+    float: left;
+}
+#head{
+    width: 170px;
+    height: 268px;
+}
+#head img{
+    width: 170px;
+    height: 170px;
+}
+#head h4{
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+}
+#fans{
+    width: 170px;
+    height: 65px;
+}
+#fans a{
+    text-align: center;
+    display: block;
+    float: left;
+    width: 50%;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+#fans span{
+    width: 85px;
+    height: 32px;
+}
+#list li{
+    width: 170px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 10px;
+}
+#list li>a{
+    font-size: 18px;
+    color: slategrey;
+    line-height: 36px;
+    padding-left: 10px;
+}
+#list li img{
+    padding-left: 10px;
+    width: 26px;
+    height: 26px;
+    vertical-align:middle;
+}

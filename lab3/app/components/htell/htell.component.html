@@ -1,0 +1,26 @@
+<div id="content">
+    <div id="content_list">
+      <ul>
+        <li><a href="">我的</a></li>
+        <li><a href="">收到的赞</a></li>
+        <li><a href="">评论</a></li>
+      </ul>
+    </div>
+    <div id="mine">
+      <ul>
+        <li *ngFor="let telling of tellings;">
+          <a>
+            <div id="im"><img src="{{telling.images}}" alt="" id="images"></div>
+            <div id="information">
+              <div id="name">{{telling.name}}</div>
+              <div id="mine_content">{{telling.information}}</div>
+              <div id="bottom">
+                <span>{{telling.time}}</span>
+                <span id="right">收藏 转发 评论{{telling.comment}} 赞</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>

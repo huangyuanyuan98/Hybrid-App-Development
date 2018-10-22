@@ -1,0 +1,41 @@
+.container{
+    margin-bottom: 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+#buttom{
+    float: left;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+#list li{
+    float: left;
+    width: 77px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    color: black;
+    text-align: center;
+}
+#orange{
+    background-color:orange;
+}
+#task{
+    margin-top: 20px;
+    float: left;
+    width: 1000px;
+    border-top: 2px solid whitesmoke;
+    padding-top: 10px;
+}
+#task_top li{
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    border:1px solid whitesmoke;
+    line-height: 30px;
+    text-align: center;
+}
+#now{
+    color:orange;
+}

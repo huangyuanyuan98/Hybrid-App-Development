@@ -1,0 +1,25 @@
+<div class="container">
+  <div id="lesson">
+    <ul>
+      <li><a href="">课程分类<span class="caret"></span></a></li>
+      <li><a href="">课程体系<span class="caret"></span></a></li>
+    </ul>
+  </div>
+  <div>
+  <ul id="course">
+    <li *ngFor="let lesson of lessons;">
+      <div id="list">
+        <a [routerLink]="['/course',lesson.id]">
+          <div id="img"><img src="{{lesson.images}}" alt="" id="images"></div>
+          <h5>{{lesson.lessonName}}</h5>
+          <div id="content">{{lesson.content}}</div>
+          <div id="bottom">
+            <span>课时 {{lesson.hour}}</span>
+            <span id="person">人数 {{lesson.person}}</span>
+          </div>
+        </a>
+      </div>
+    </li>
+  </ul>
+  </div>
+</div>
