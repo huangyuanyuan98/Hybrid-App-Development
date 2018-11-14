@@ -1,0 +1,39 @@
+<!-- 我的 -->
+<!-- 顶部 -->
+<ion-header>
+    <div class="top">
+        <img src="assets/imgs/MINE-header.png" alt="头像" (click)="goRegister()">
+        <p text-center>土方桔桔桔</p>
+    </div>
+</ion-header>
+<!-- 内容 -->
+<ion-content>
+    <!-- 订单 -->
+    <div class="order">
+        <span style="margin-left: 10px;line-height: 45px" >我的订单</span>
+        <span float-right style="line-height: 45px;margin-right: 10px"><a href="">查看全部订单 > </a></span>
+    </div>
+
+    <div class="three">
+        <ul>
+            <li style="margin-right: 1.5px"><img src="assets/imgs/发布.png" alt="发布"></li>
+            <li style="margin-right: 1.5px"><img src="assets/imgs/收藏.png" alt="收藏"></li>
+            <li><img src="assets/imgs/眼睛.png" alt="眼睛"></li>
+        </ul>
+    </div>
+
+    <div class="six">
+        <ul>
+            <li style="margin-right: 2%"><img src="assets/imgs/购物车.png" alt="购物车"></li>
+            <li><img src="assets/imgs/地址.png" alt="地址"></li>
+        </ul>
+        <ul>
+            <li style="margin-right: 2%"><img src="assets/imgs/优惠券.png" alt="优惠券"></li>
+            <li><img src="assets/imgs/客服.png" alt="客服"></li>
+        </ul>
+        <ul>
+            <li style="margin-right: 2%"><img src="assets/imgs/信息.png" alt="信息"></li>
+            <li (click)="goSub()"><img src="assets/imgs/设置.png" alt="设置"></li>
+        </ul>
+    </div>
+</ion-content>

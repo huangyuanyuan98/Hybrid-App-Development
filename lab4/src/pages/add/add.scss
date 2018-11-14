@@ -1,0 +1,27 @@
+page-add {
+    ion-content{
+        background: #ffdb2c!important;
+        width: 100%;
+        height: 100%;
+        position:relative;
+        .add_list{
+            width: 80%;
+            height: 60%;
+            position:absolute;
+            top: 20%;
+            left: 10%;
+            .add_list_content{
+                float: left;
+                position:relative;
+                width: 50%;
+                height: 50%;
+                img{
+                    left: 20%;
+                    position:relative;
+                    width: 65%;
+                    height: 90%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+page-register {
+    ion-content{//整个全屏
+        background: url(../assets/imgs/注册背景.png);
+        background-size: cover;
+    }
+    .box{
+        ion-item{
+            font-style: #fff!important;
+            background-color: transparent;
+        }
+        button{
+            color: #fff;
+            margin-top: 50px; 
+        }
+        p{
+            color: #fff!important;
+            text-align: center;
+        }
+        .text-input::-webkit-input-placeholder {
+            color: white;
+        }    
+        .text-input:-ms-input-placeholder {
+            color: white; 
+        }    
+        .text-input::-moz-placeholder {        
+            color: white;    
+        }    
+        .text-input:-moz-placeholder {        
+            color: white;    
+        }
+    }
+}

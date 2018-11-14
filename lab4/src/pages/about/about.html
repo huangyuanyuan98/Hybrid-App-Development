@@ -1,0 +1,39 @@
+<!-- 商城 -->
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar placeholder="双12特惠好物超低价" color="#ededed" (click)="goSearch()">
+    </ion-searchbar>
+  </ion-toolbar>
+  <div>
+    <img src="assets/imgs/1212_02.png" alt="双十二">
+  </div>
+</ion-header>
+
+<ion-content>
+    <ul class="navList">
+      <li *ngFor="let item of arr;let idx = index;" (click)="isClick(idx)" [class.first]="isActive==idx">{{arr[idx]}}</li>
+    </ul>
+    <div [ngSwitch]="isActive">
+      <div *ngSwitchCase="0">
+        <div class="sofa">
+          <p text-center>———— 沙发 ————</p>
+        </div>
+        <div class="sofa_content">
+          <img src="assets/imgs/shopping-1_03.png" alt="1">
+          <img src="assets/imgs/shopping-2_03.png" alt="2">
+          <img src="assets/imgs/shopping-3_03.png" alt="3">
+          <img src="assets/imgs/shopping-4_03.png" alt="4">
+        </div>
+        <div class="all">
+          <span float-right style="margin-right: 10px;"><a href="">查看全部商品>></a></span>
+        </div>
+        <div class="sofa">
+          <p text-center>———— 电视柜 ————</p>
+        </div>
+      </div>
+      <div *ngSwitchCase="1">卧室</div>
+      <div *ngSwitchCase="2">餐厅</div>
+      <div *ngSwitchCase="3">书房</div>
+      <div *ngSwitchCase="4">门厅</div>
+    </div>
+</ion-content>

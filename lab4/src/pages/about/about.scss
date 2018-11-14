@@ -1,0 +1,60 @@
+page-about {
+    ion-header{
+        background-color: #fafafa!important;
+        img{
+            width: 100%;
+            height: 100px;
+        }
+    }
+    ion-content{
+        background-color: #fafafa!important;
+        .navList{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            li{
+                height: 30px;
+                text-align: center;
+                float: left;
+                width: 20%;
+                list-style: none;
+                line-height: 30px;
+                color: #979797;
+                font-size: 16px;
+            }
+            .first{
+               background-color: #ffdb2c;
+               color: #261f02;
+            }
+        }
+        .sofa{
+            float: left;
+            width: 100%;
+            height: 30px;
+            p{
+                padding: 0;
+                margin: 0;
+                line-height: 30px;
+            }
+        }
+        .sofa_content{
+            float: left;
+            width: 100%;
+            // height: 165px;
+            img{
+                margin: 0px 2.5% 5px 2.5%;
+                float: left;
+                width: 45%;
+                height: 165px;
+            }
+        }
+        .all{
+            width: 100%;
+            height: 20px;
+            a{
+                color: #969696;
+                text-decoration: none;                
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<ion-header no-border>
+  <ion-navbar color="trans">
+    <ion-title text-center>注册</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="search" color="trans"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+  
+  <ion-content padding>
+    <div class="box">
+      <ion-item>
+        <ion-input class="text-input" type="number" placeholder="手机号"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input class="text-input" type="text" placeholder="验证码"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input class="text-input" type="password" placeholder="密码"></ion-input>
+      </ion-item>
+      <button ion-button block color="org">注册</button>
+      <p (click)="goLogin()">已有账号？立即登录</p>
+    </div>
+  </ion-content>

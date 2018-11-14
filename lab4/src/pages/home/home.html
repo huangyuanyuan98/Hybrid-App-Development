@@ -1,0 +1,170 @@
+<!-- 顶部 -->
+<ion-header text-center no-border>
+    <ion-navbar color="org">
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        <img src="assets/imgs/ORANGE-HOUSE.png" alt="">
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only>
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+<ion-content>
+  <!-- 导航栏 -->
+  <ion-segment [(ngModel)]="navList">
+    <ion-segment-button value="recommendation">
+      推荐
+    </ion-segment-button>
+    <ion-segment-button value="furnishing">
+      家居
+    </ion-segment-button>
+    <ion-segment-button value="kitchen">
+      餐厨
+    </ion-segment-button>
+    <ion-segment-button value="bedding">
+      床上用品
+    </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="navList">
+    <!-- 推荐 -->
+    <div *ngSwitchCase="'recommendation'">
+      <!-- 图片轮播 -->
+      <ion-slides pager="true" autoplay="1000" loop="true" class="sli">
+        <ion-slide>
+          <img src="assets/imgs/HOME-LIFE.png" alt="另一种生活">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/HOME-LIFE.png" alt="另一种生活">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/HOME-LIFE.png" alt="另一种生活">
+        </ion-slide>
+      </ion-slides>
+      <!-- 热门推荐 -->
+      <div class="hot">
+          <h3 text-center>热|门|推|荐</h3>
+          <p text-center>RECOMMENDATION</p>
+      </div>
+      <!-- 推荐内容 -->
+      <ul class="goods">
+        <li>
+          <img src="assets/imgs/HOME-11.png" alt="">
+          <p>——北欧原木色置物架——</p>
+          <span>
+            <ion-icon name="md-star-half"></ion-icon>
+          </span>
+        </li>
+        <li>
+          <img src="assets/imgs/HOME-12.png" alt="">
+          <p>——简约黑檀木茶几——</p>
+          <span>
+            <ion-icon name="md-star-half"></ion-icon>
+          </span>
+        </li>
+        <li>
+          <img src="assets/imgs/HOME-21.png" alt="">
+          <p>——北欧白橡木书架——</p>
+          <span>
+            <ion-icon name="md-star-half"></ion-icon>
+          </span>
+        </li>
+        <li>
+          <img src="assets/imgs/HOME-22.png" alt="">
+          <p>——北欧风餐边柜——</p>
+          <span>
+            <ion-icon name="md-star-half"></ion-icon>
+          </span>
+        </li>
+        <li>
+          <img src="assets/imgs/HOME-31.png" alt="">
+          <p>——北欧原木色——</p>
+          <span>
+            <ion-icon name="md-star-half"></ion-icon>
+          </span>
+        </li>
+        <li>
+          <img src="assets/imgs/HOME-32.png" alt="">
+          <p>——北欧原木色—— </p>
+          <span>
+            <ion-icon name="md-star-half"></ion-icon>
+          </span>
+        </li>
+      
+      </ul>
+    </div>
+    <!-- 家居 -->
+    <div *ngSwitchCase="'furnishing'">
+      <!-- 图片轮播 -->
+      <ion-slides pager="true" autoplay="1000" loop="true" class="sli">
+        <ion-slide>
+          <img src="assets/imgs/FORNISHING.png" alt="独生一园喜">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/FORNISHING.png" alt="独生一园喜">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/FORNISHING.png" alt="独生一园喜">
+        </ion-slide>
+      </ion-slides>
+      <!-- 推荐 -->
+      <ul class="hot_picture">
+        <li>
+          <img src="assets/imgs/FORNISHING-HOT-1.png" alt="客厅">
+        </li>
+        <li>
+          <img src="assets/imgs/FORNISHING-HOT-2.png" alt="书房">
+        </li>
+        <li>
+          <img src="assets/imgs/FORNISHING-HOT-3.png" alt="门厅">
+        </li>
+      </ul>
+      <!-- 桔子家居 -->
+      <div class="hot">
+        <h3 text-center>桔|子|家|居</h3>
+        <p text-center>Orange household</p>
+      </div>
+      <!-- 推荐内容 -->
+        <ul class="goods">
+          <li>
+            <img src="assets/imgs/FORNISHING-11.png" alt="">
+            <p>—欧式全实木花几—  RMB 600</p>
+            <span>
+              <ion-icon name="md-star-half"></ion-icon>
+            </span>
+          </li>
+          <li>
+            <img src="assets/imgs/FORNISHING-22.png" alt="">
+            <p>—现代简约早餐桌—  RMB 450</p>
+            <span>
+              <ion-icon name="md-star-half"></ion-icon>
+            </span>
+          </li>
+          <li>
+            <img src="assets/imgs/FORNISHING-11.png" alt="">
+            <p>—欧式全实木花几—  RMB 600</p>
+            <span>
+              <ion-icon name="md-star-half"></ion-icon>
+            </span>
+          </li>
+          <li>
+            <img src="assets/imgs/FORNISHING-22.png" alt="">
+            <p>—现代简约早餐桌—  RMB 450</p>
+            <span>
+              <ion-icon name="md-star-half"></ion-icon>
+            </span>
+          </li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'kitchen'">
+      这是kitchen
+    </div>
+    <div *ngSwitchCase="'bedding'">
+      这是bedding
+    </div>
+  </div>
+</ion-content>
